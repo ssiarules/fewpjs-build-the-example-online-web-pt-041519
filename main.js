@@ -3,7 +3,14 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+function captureLikes(){
+ document.getElementsByClassName('like-glyph').addEventListener("click", clickHeart);
+}
 
+function clickHeart(){
+  let likes = document.getElementsByClassName('like-glyph');
+   likes.innerHTML = console.log(FULL_HEART)
+}
 
 
 
